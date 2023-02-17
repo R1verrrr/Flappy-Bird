@@ -94,9 +94,9 @@ floor_surface = pygame.image.load("assets/base.png").convert()
 floor_surface = pygame.transform.scale2x(floor_surface)
 floor_x_pos = 0
 
-bird_downflap = pygame.transform.scale2x(pygame.image.load("assets/redbird-downflap.png").convert_alpha())
-bird_midflap = pygame.transform.scale2x(pygame.image.load("assets/redbird-midflap.png").convert_alpha())
-bird_upflap = pygame.transform.scale2x(pygame.image.load("assets/redbird-upflap.png").convert_alpha())
+bird_downflap = pygame.transform.scale2x(pygame.image.load("assets/airplane.png").convert_alpha())
+bird_midflap = pygame.transform.scale2x(pygame.image.load("assets/airplane.png").convert_alpha())
+bird_upflap = pygame.transform.scale2x(pygame.image.load("assets/airplane.png").convert_alpha())
 bird_frames = [bird_downflap,bird_midflap,bird_upflap]
 bird_index = 0
 bird_surface = bird_frames[bird_index]
@@ -105,8 +105,8 @@ bird_rect = bird_surface.get_rect(center = (100,512))
 BIRDFLAP = pygame.USEREVENT + 1
 pygame.time.set_timer(BIRDFLAP, 200)
 
-pipe_surface = pygame.image.load('assets/pipe-green.png').convert()
-pipe_surface = pygame.transform.scale2x((pipe_surface))
+pipe_surface = pygame.image.load('assets/WTC.png').convert()
+pipe_surface = pygame.transform.scale((pipe_surface), (86, 419))
 pipe_list =[]
 SPAWNPIPE = pygame.USEREVENT
 pygame.time.set_timer(SPAWNPIPE, 1300)
